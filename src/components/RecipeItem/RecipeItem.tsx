@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
+import { useAppDispatch } from "../../hooks/reduxHooks";
 import { IRecipe } from "../../models/AppModels";
 import { addToFavourites, deleteFromFavourites } from "../../store/favourites/favouritesSlice";
 

@@ -13,7 +13,7 @@ export const favouritesSlice = createSlice({
          state.push(newReciepe);
       },
       deleteFromFavourites: (state, { payload: id }: PayloadAction<number>) => {
-         state.filter((reciepe) => reciepe.id !== id);
+         return state.filter((reciepe) => reciepe.id !== id);
       },
    },
 });

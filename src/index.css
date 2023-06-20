@@ -12,3 +12,8 @@ body {
   font-size: 16px;
   color: #fff;
 }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}

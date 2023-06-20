@@ -1,3 +1,4 @@
+import Header from "./components/Header/Header";
 import RecipeItem from "./components/RecipeItem/RecipeItem";
 import { useAppSelector } from "./hooks/reduxHooks";
 
@@ -8,18 +9,22 @@ const recipes = [
 
 function App() {
    const { favourites } = useAppSelector((state) => state);
+
    console.log(favourites);
-   
+
    const isFavourite = (id: number) => {
       if (favourites.some((recipe) => recipe.id === id)) return true;
       return false;
    };
 
    return (
-      <div>
-         {recipes.map((reciepe) => (
-            <RecipeItem key={reciepe.id} recipe={reciepe} favourite={isFavourite(reciepe.id)} />
-         ))}
+      <div className="container">
+         <Header />
+         <section className="recipe_list">
+            {recipes.map((reciepe) => (
+               <RecipeItem key={reciepe.id} recipe={reciepe} favourite={isFavourite(reciepe.id)} />
+            ))}
+         </section>
       </div>
    );
 }
