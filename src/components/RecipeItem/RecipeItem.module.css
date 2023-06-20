@@ -1,0 +1,27 @@
+.item {
+    background-color: #363636;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+.title {
+    margin-bottom: 8px;
+}
+
+.btn {
+    padding: 4px;
+    background-color: #e08594;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #c06977d7;
+}
+
+.btn:active {
+    border: 1px solid #c06977d7;
+}

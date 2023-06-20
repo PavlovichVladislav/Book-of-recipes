@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 
+import favourites from './favourites/favouritesSlice';
+
 export const store = configureStore({
-  reducer: {},
+  reducer: {favourites},
+  devTools: true,
 })
 
 
