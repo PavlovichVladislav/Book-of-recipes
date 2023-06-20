@@ -1,6 +1,7 @@
 import { useAppDispatch } from "../../hooks/reduxHooks";
 import { IRecipe } from "../../models/AppModels";
 import { addToFavourites, deleteFromFavourites } from "../../store/favourites/favouritesSlice";
+import Button from "../Button/Button";
 
 import styles from "./RecipeItem.module.css";
 
@@ -24,13 +25,9 @@ const RecipeItem: React.FC<Props> = ({ recipe, favourite }) => {
       <div className={styles.item}>
          <h2 className={styles.title}>{recipe.name}</h2>
          {favourite ? (
-            <button className={styles.btn} onClick={onDeleteFromFavourites}>
-               Remove from favourites
-            </button>
+            <Button onClick={onDeleteFromFavourites}>Remove from favourites</Button>
          ) : (
-            <button className={styles.btn} onClick={onAddToFavourites}>
-               Add to favourites
-            </button>
+            <Button onClick={onAddToFavourites}>Add to favourites</Button>
          )}
       </div>
    );
