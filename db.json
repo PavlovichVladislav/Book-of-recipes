@@ -1,23 +1,34 @@
 {
-    "recipes": [{
-            "id": 1,
-            "name": "Яблочный торт",
-            "image": "https://www.povarenok.ru/data/cache/2016jan/28/46/1424197_89586-710x550x.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Омлет",
-            "image": "https://www.gastronom.ru/binfiles/images/20200320/b300e18f.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Кебаб",
-            "image": "https://s1.eda.ru/StaticContent/Photos/140902214744/140912175143/p_O.jpg"
-        },
-        {
-            "id": 4,
-            "name": "Карбонара",
-            "image": "https://s1.eda.ru/StaticContent/Photos/150525210126/150601174518/p_O.jpg"
-        }
-    ]
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Яблочный торт",
+      "image": "https://www.povarenok.ru/data/cache/2016jan/28/46/1424197_89586-710x550x.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Омлет",
+      "image": "https://www.gastronom.ru/binfiles/images/20200320/b300e18f.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Кебаб",
+      "image": "https://s1.eda.ru/StaticContent/Photos/140902214744/140912175143/p_O.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Карбонара",
+      "image": "https://s1.eda.ru/StaticContent/Photos/150525210126/150601174518/p_O.jpg"
+    },
+    {
+      "name": "Буйабес",
+      "image": "https://www.gastronom.ru/binfiles/images/00000019/00021214.jpg",
+      "id": 5
+    },
+    {
+      "name": "Тартар",
+      "image": "https://cdn.lifehacker.ru/wp-content/uploads/2021/02/10_1613059163-e1613059243759-1280x640.jpg",
+      "id": 6
+    }
+  ]
 }

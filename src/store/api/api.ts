@@ -10,13 +10,19 @@ export const api = createApi({
     endpoints: (builder) => ({
         getRecipes: builder.query<IRecipe[], string>({
             query: () => `/`,
+            providesTags: () => [{
+                type: 'Recipe'
+            }]
         }),
         createRecipe: builder.mutation({
             query: (recipe) => ({
                 body: recipe,
                 url: '/',
                 method: 'POST',
-            })
+            }),
+            invalidatesTags: () => [{
+                type: 'Recipe'
+            }]
         })
     })
 })
