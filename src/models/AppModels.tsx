@@ -4,6 +4,8 @@ export interface IRecipe {
    image: string;
 }
 
+export type IRecipeData = Omit<IRecipe, 'id'>
+
 export interface IUser {
    id: number;
    name: string;

@@ -5,7 +5,12 @@ import RecipeItem from "../RecipeItem/RecipeItem";
 
 const RecipeList = () => {
    const { favourites } = useAppSelector((state) => state);
-   const { isLoading, data, error } = useGetRecipesQuery("");
+   const { user } = useAppSelector((state) => state.user);
+   const { searchValue } = useAppSelector(state => state.search);
+
+   const { isLoading, data, error } = useGetRecipesQuery(searchValue, {
+      skip: !user
+   });
 
    const isFavourite = (id: number) => {
       if (favourites.some((recipe) => recipe.id === id)) return true;

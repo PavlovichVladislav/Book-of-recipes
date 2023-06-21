@@ -7,11 +7,14 @@ export const fetchUserById = (userId: number): Promise<IUser> => {
    );
 };
 
-export const getUserById = createAsyncThunk("user/getById", async (userId: number, thunkApi) => {
-   try {
-      const response = await fetchUserById(userId);
-      return response;
-   } catch (e) {
-      return thunkApi.rejectWithValue(e);
+export const getUserById = createAsyncThunk<IUser, number>(
+   "user/getById",
+   async (userId, thunkApi) => {
+      try {
+         const response = await fetchUserById(userId);
+         return response;
+      } catch (e) {
+         return thunkApi.rejectWithValue(e);
+      }
    }
-});
+);
