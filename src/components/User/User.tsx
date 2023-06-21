@@ -17,10 +17,10 @@ const User = () => {
    };
 
    return (
-      <>
+      <h2 className={styles.userName}>
          {!isAuth && <Button onClick={onAuth}>Авторизоваться</Button>}
-         {isAuth && <h2 className={styles.userName}>{user?.name}</h2>}
-      </>
+         {isAuth && user?.name}
+      </h2>
    );
 };
 

@@ -24,6 +24,7 @@ const RecipeItem: React.FC<Props> = ({ recipe, favourite }) => {
    return (
       <div className={styles.item}>
          <h2 className={styles.title}>{recipe.name}</h2>
+         <img className={styles.img} src={recipe.image} alt={recipe.name} />
          {favourite ? (
             <Button onClick={onDeleteFromFavourites}>Remove from favourites</Button>
          ) : (
